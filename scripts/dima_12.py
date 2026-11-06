@@ -1,0 +1,5 @@
+n = int(input("Enter a number: "))
+digits = str(n)
+power = len(digits)
+total = sum(int(d) ** power for d in digits)
+print(f"{n} is an Armstrong number" if total == n else f"{n} is not an Armstrong number")
